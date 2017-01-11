@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One)
+@import url(https://fonts.googleapis.com/css?family=Passion+One:400,700)
+
+$gray: #555
+$dark-gray: #333
+$black: #242224
+$white: #F4F2F4
+$one: #5C96BC
+$two: #42E31B
+$three: #FEDE16
+$four: #E66504
+$five: #C60600
+
+body
+  background: $black
+.profile
+  padding: 30px
+  margin: 30px auto
+  width: 40%
+  min-width: 240px
+  text-align: center
+  background: $white
+  border-radius: 2px
+  &:hover
+    img
+      transform: rotate(-3deg)
+    .bar span
+      opacity: 1
+  img
+    width: 160px
+    border-radius: 90px
+    margin-bottom: 28px
+    box-shadow: 0 8px 6px -6px $gray
+    transition: transform 1s
+  .bar span
+    width: 20%
+    opacity: 0.5
+    display: inline-block
+    height: 5px
+    padding: 0
+    margin: 15px 0
+    transition: opacity 1s
+    &.one
+      background-color: $one
+    &.two
+      background-color: $two
+    &.three
+      background-color: $three
+    &.four
+      background-color: $four
+    &.five
+      background-color: $five
+  h1, h2
+    color: $dark-gray
+    text-rendering: optimizeLegibility
+  h1
+    font-family: 'Sigmar One', Serif
+    font-size: 24px
+    line-height: 26px
+  h2
+    font-family: 'Passion One', Serif
+    font-size: 20px
+    line-height: 22px
